@@ -7,9 +7,9 @@ public class Book {
     //Varje book ska ha:namn, författare, år, upplaga, Status tillgängligh elelr ej
 
     String name;
-    String author;
-    String year;
-    int edition;
+    private String author;
+    private String year;
+    private int edition;
     boolean available;
     //Status ska vara tillgänglig by default när en bok skapas.
 
