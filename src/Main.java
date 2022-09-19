@@ -62,29 +62,29 @@ public class Main {
                 String searchedName= sc.nextLine();
 
                 // letar igenom listan om booken fiins
-               // for (int i=0; i <listofAllBooks.size(); i++) {
+                // for (int i=0; i <listofAllBooks.size(); i++) {
 
-                 //   int x =  i;
+                //   int x =  i;
 
-                   // if (listofAllBooks.get(i).name.contains(searchedName)) {
+                // if (listofAllBooks.get(i).name.contains(searchedName)) {
 
-                     for (Book b:listofAllBooks) {
-                         if (b.getName().equals(searchedName))
-                             //System.out.println("We found ya book!\n" + listofAllBooks.get(i));
-                             System.out.println("We do indeed have this masterpiece: " + b);
+                for (Book b:listofAllBooks) {
+                    if (b.getName().equals(searchedName))
+                        //System.out.println("We found ya book!\n" + listofAllBooks.get(i));
+                        System.out.println("We do indeed have this masterpiece: " + b);
 
-                         System.out.println("Do you want to borrow it?y/n?");
-                         String wantToLoan = sc.nextLine();
+                    System.out.println("Do you want to borrow it?y/n?");
+                    String wantToLoan = sc.nextLine();
 
-                         if (wantToLoan.equals("y")) {
+                    if (wantToLoan.equals("y")) {
 
-                             System.out.println("ok");
-                             b.loan(b);
-                                 System.out.println("You have borrowed the book.");
-                                 break;
-                                 //listofAllBooks.get(i).loan();
+                        System.out.println("ok");
+                        b.loan(b);
+                        System.out.println("You have borrowed the book.");
+                        break;
+                        //listofAllBooks.get(i).loan();
 
-                         }}
+                    }}
 
 
             } else if (val.equals("3")) {
@@ -93,7 +93,7 @@ public class Main {
 
                     System.out.println(b);
                 }}
-               // System.out.println(listofAllBooks);
+                // System.out.println(listofAllBooks);
 
             } else if (val.equals("4")) {
                 System.out.println("Whats the title of the book you want to return");
@@ -106,13 +106,13 @@ public class Main {
                         } else {
                             System.out.println("The book is not loaned!");
                         }
-                //for (int i=0; i <listofAllBooks.size(); i++) {
+                        //for (int i=0; i <listofAllBooks.size(); i++) {
 
 
 
-                  // if (listofAllBooks.get(i).retur()) {
-                    //    System.out.println("Thank you for returning the book");
-                      //  }
+                        // if (listofAllBooks.get(i).retur()) {
+                        //    System.out.println("Thank you for returning the book");
+                        //  }
                     }}
             } else if (val.equals("5")) {
                 System.out.println("Thank you for visiting");
